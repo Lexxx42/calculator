@@ -77,5 +77,5 @@ def show_additional_operations(mode) -> int:
         return validation_additional_operation()
 
 
-#main_menu()  # - расскоментить, чтобы глянуть, как оно тут работает
+#main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
 # все print()-ы со значениями сейчас для отладки.
