@@ -60,7 +60,8 @@ def input_data(number_type, main_operation) -> None:
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
 
 
-def show_additional_operations() -> None:
+def show_additional_operations() -> int:
+    """ This function is additional operation for div function. """
     print("""Operations:
 1 - '/'
 2 - '//'
