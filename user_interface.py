@@ -49,7 +49,8 @@ def choose_calculation(mode) -> None:
         return input_data(mode, operation)
 
 
-def input_data(number_type, main_operation):
+def input_data(number_type, main_operation) -> tuple[float, float, float] | tuple[float, float] | tuple[
+    dict[float, float], dict[float, float]]:
     """ This function is for numbers input from user for main operations. """
     if number_type == 1:
         number_real_1, number_real_2 = validation_rational_input(main_operation)
@@ -80,6 +81,5 @@ def show_additional_operations(mode) -> int:
     else:
         return add_operation_code
 
-
-#main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
+# main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
 # все print()-ы со значениями сейчас для отладки.
