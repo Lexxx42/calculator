@@ -1,5 +1,7 @@
 """ This file is for user interface. Coded by Alexander Konukhov. """
-from excep import validation_mode
+import sys
+
+from excep import *
 
 
 def main_menu() -> None:
@@ -14,11 +16,48 @@ Working with:
 """)
 
     mode = validation_mode()
+    if mode == 0:
+        print("Thank you for using our calculator! See you next time.")
+        sys.exit()
     choose_calculation(mode)
 
 
 def choose_calculation(mode) -> None:
-    return
+    """ This function is for available operations for chosen mode. """
+    if mode == 1:
+        print("""Operations:
+1 - sum
+2 - sub
+3 - mult
+4 - div
+5 - pow
+6 - sqrt
+0 - previous menu
+""")
+        operation = validation_operation(mode)
+    else:
+        print("""Operations:
+        1 - sum
+        2 - sub
+        3 - mult
+        4 - div
+        5 - pow
+        0 - previous menu
+        """)
+        operation = validation_operation(mode)
+    if operation == 0:
+        main_menu()
+    else:
+        input_data(mode, operation)
+
+
+def input_data(number_type, main_operation) -> None:
+    """ This function is for numbers input from user for mode. """
+    if number_type == 1:
+        validation_rational_input(main_operation)
+        print()
+    else:
+        print()
 
 
 main_menu()
