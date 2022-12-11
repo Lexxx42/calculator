@@ -18,7 +18,7 @@ Working with:
     if mode == 0:
         print("Thank you for using our calculator! See you next time.")
         sys.exit()
-    choose_calculation(mode)
+    return choose_calculation(mode)
 
 
 def choose_calculation(mode) -> None:
@@ -44,12 +44,12 @@ def choose_calculation(mode) -> None:
 """)
         operation = validation_operation(mode)
     if operation == 0:
-        main_menu()
+        return main_menu()
     else:
-        input_data(mode, operation)
+        return input_data(mode, operation)
 
 
-def input_data(number_type, main_operation) -> None:
+def input_data(number_type, main_operation):
     """ This function is for numbers input from user for main operations. """
     if number_type == 1:
         number_real_1, number_real_2 = validation_rational_input(main_operation)
@@ -57,9 +57,13 @@ def input_data(number_type, main_operation) -> None:
         if main_operation == 4:
             code_for_additional_operation = show_additional_operations(number_type)
             print(code_for_additional_operation)
+            return number_real_1, number_real_2, code_for_additional_operation
+        else:
+            return number_real_1, number_real_2
     else:
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
         print(number_complex_1, number_complex_2)
+        return number_complex_1, number_complex_2
 
 
 def show_additional_operations(mode) -> int:
