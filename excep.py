@@ -1,4 +1,4 @@
-""" This file is for data validation. Coded by Alexander Konukhov. """
+""" This file is for data validation. Developed by Alexander Konukhov. """
 
 
 def validation_mode() -> int:

@@ -1,4 +1,4 @@
-""" This file is for user interface. Coded by Alexander Konukhov. """
+""" This file is for user interface. Developed by Alexander Konukhov. """
 import sys
 from excep import *
 
@@ -50,7 +50,7 @@ def choose_calculation(mode) -> None:
 
 
 def input_data(number_type, main_operation) -> None:
-    """ This function is for numbers input from user for mode. """
+    """ This function is for numbers input from user for main operations. """
     if number_type == 1:
         number_real_1, number_real_2 = validation_rational_input(main_operation)
         print(number_real_1, number_real_2)
@@ -63,7 +63,7 @@ def input_data(number_type, main_operation) -> None:
 
 
 def show_additional_operations(mode) -> int:
-    """ This function is additional operation for div function. """
+    """ This function is for additional operations for div function. """
     print("""Operations:
 1 - '/'
 2 - '//'
