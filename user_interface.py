@@ -73,4 +73,4 @@ def show_additional_operations() -> int:
     return validation_additional_operation()
 
 
-# main_menu() - расскоментить, чтобы глянуть, как оно тут работает
+#main_menu()  # - расскоментить, чтобы глянуть, как оно тут работает
