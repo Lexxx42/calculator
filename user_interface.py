@@ -69,6 +69,3 @@ def show_additional_operations() -> int:
 0 - previous menu
 """)
     return validation_additional_operation()
-
-
-main_menu()
