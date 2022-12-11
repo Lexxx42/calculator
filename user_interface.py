@@ -41,7 +41,6 @@ def choose_calculation(mode) -> None:
         2 - sub
         3 - mult
         4 - div
-        5 - pow
         0 - previous menu
         """)
         operation = validation_operation(mode)
@@ -54,10 +53,9 @@ def choose_calculation(mode) -> None:
 def input_data(number_type, main_operation) -> None:
     """ This function is for numbers input from user for mode. """
     if number_type == 1:
-        validation_rational_input(main_operation)
-        print()
+        number_real_1, number_real_2 = validation_rational_input(main_operation)
     else:
-        print()
+        number_complex_1, number_complex_2 = validation_complex_input(main_operation)
 
 
 main_menu()
