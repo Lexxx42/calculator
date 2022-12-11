@@ -55,14 +55,14 @@ def input_data(number_type, main_operation) -> None:
         number_real_1, number_real_2 = validation_rational_input(main_operation)
         print(number_real_1, number_real_2)
         if main_operation == 4:
-            code_for_additional_operation = show_additional_operations()
+            code_for_additional_operation = show_additional_operations(number_type)
             print(code_for_additional_operation)
     else:
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
         print(number_complex_1, number_complex_2)
 
 
-def show_additional_operations() -> int:
+def show_additional_operations(mode) -> int:
     """ This function is additional operation for div function. """
     print("""Operations:
 1 - '/'
@@ -70,7 +70,12 @@ def show_additional_operations() -> int:
 3 - '%
 0 - previous menu
 """)
-    return validation_additional_operation()
+    add_operation_code = validation_additional_operation()
+    if add_operation_code == 0:
+        choose_calculation(mode)
+    else:
+        return validation_additional_operation()
 
 
-#main_menu()  # - расскоментить, чтобы глянуть, как оно тут работает
+main_menu()  # - расскоментить, чтобы глянуть, как оно тут работает
+# все print()-ы со значениями сейчас для отладки.
