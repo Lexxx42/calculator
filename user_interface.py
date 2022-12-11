@@ -1,6 +1,5 @@
 """ This file is for user interface. Coded by Alexander Konukhov. """
 import sys
-
 from excep import *
 
 
@@ -54,8 +53,21 @@ def input_data(number_type, main_operation) -> None:
     """ This function is for numbers input from user for mode. """
     if number_type == 1:
         number_real_1, number_real_2 = validation_rational_input(main_operation)
+        if main_operation == 4:
+            code_for_additional_operation = show_additional_operations()
+            print(code_for_additional_operation)
     else:
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
+
+
+def show_additional_operations() -> None:
+    print("""Operations:
+1 - '/'
+2 - '//'
+3 - '%
+0 - previous menu
+""")
+    return validation_additional_operation()
 
 
 main_menu()

@@ -69,3 +69,16 @@ def validation_complex_input(main_operation) -> tuple[dict[float, float], dict[f
     first_imaginary_number[output_complex[0]] = output_complex[1]
     second_imaginary_number[output_complex[2]] = output_complex[3]
     return first_imaginary_number, second_imaginary_number
+
+
+def validation_additional_operation() -> int:
+    """ Function for check user's input for additional operation. """
+    while True:
+        try:
+            add_operation_code = int(input("Enter additional operation code: "))
+        except ValueError:
+            print('Incorrect input! Input must be an integer')
+            continue
+        if add_operation_code in range(4):
+            return add_operation_code
+        print("Incorrect input! Please look at the available additional operation codes.")
