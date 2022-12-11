@@ -36,12 +36,12 @@ def choose_calculation(mode) -> None:
         operation = validation_operation(mode)
     else:
         print("""Operations:
-        1 - sum
-        2 - sub
-        3 - mult
-        4 - div
-        0 - previous menu
-        """)
+1 - sum
+2 - sub
+3 - mult
+4 - div
+0 - previous menu
+""")
         operation = validation_operation(mode)
     if operation == 0:
         main_menu()
@@ -53,11 +53,13 @@ def input_data(number_type, main_operation) -> None:
     """ This function is for numbers input from user for mode. """
     if number_type == 1:
         number_real_1, number_real_2 = validation_rational_input(main_operation)
+        print(number_real_1, number_real_2)
         if main_operation == 4:
             code_for_additional_operation = show_additional_operations()
             print(code_for_additional_operation)
     else:
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
+        print(number_complex_1, number_complex_2)
 
 
 def show_additional_operations() -> int:
@@ -69,3 +71,6 @@ def show_additional_operations() -> int:
 0 - previous menu
 """)
     return validation_additional_operation()
+
+
+# main_menu() - расскоментить, чтобы глянуть, как оно тут работает
