@@ -72,9 +72,9 @@ def show_additional_operations(mode) -> int:
 """)
     add_operation_code = validation_additional_operation()
     if add_operation_code == 0:
-        choose_calculation(mode)
+        return choose_calculation(mode)
     else:
-        return validation_additional_operation()
+        return add_operation_code
 
 
 #main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
