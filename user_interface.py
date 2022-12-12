@@ -58,7 +58,7 @@ def input_data(number_type, main_operation) -> tuple[float, float, int] | tuple[
         if main_operation == 4:
             code_for_additional_operation = show_additional_operations(number_type)
             print(code_for_additional_operation)
-            return number_real_1, number_real_2, code_for_additional_operation
+            return number_real_1, number_real_2, 40+code_for_additional_operation
         else:
             return number_real_1, number_real_2, main_operation
     else:
