@@ -60,11 +60,11 @@ def input_data(number_type, main_operation) -> tuple[float, float, float] | tupl
             print(code_for_additional_operation)
             return number_real_1, number_real_2, code_for_additional_operation
         else:
-            return number_real_1, number_real_2
+            return number_real_1, number_real_2, main_operation
     else:
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
         print(number_complex_1, number_complex_2)
-        return number_complex_1, number_complex_2
+        return number_complex_1, number_complex_2, main_operation
 
 
 def show_additional_operations(mode) -> int:
