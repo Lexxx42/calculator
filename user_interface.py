@@ -91,5 +91,9 @@ def show_additional_operations(mode) -> int:
     else:
         return add_operation_code
 
-main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
+# main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
 # все print()-ы со значениями сейчас для отладки.
+
+# отображение результата
+def view_result(result:str) -> None:
+    print(result)
