@@ -2,6 +2,9 @@
 import sys
 from excep import *
 
+# добавлены глобальные переменные для передачи значений
+t=(0,0,0)
+numb_type = -1
 
 def main_menu() -> None:
     """ This function is for main menu of calculator. """
@@ -52,18 +55,25 @@ def choose_calculation(mode) -> None:
 def input_data(number_type, main_operation) -> tuple[float, float, int] | tuple[float, float, int] | tuple[
     dict[float, float], dict[float, float], int]:
     """ This function is for numbers input from user for main operations. """
+    global t
+    global numb_type
     if number_type == 1:
+        numb_type = 1
         number_real_1, number_real_2 = validation_rational_input(main_operation)
         print(number_real_1, number_real_2)
         if main_operation == 4:
             code_for_additional_operation = show_additional_operations(number_type)
             print(code_for_additional_operation)
+            t = (number_real_1, number_real_2, 40+code_for_additional_operation)
             return number_real_1, number_real_2, 40+code_for_additional_operation
         else:
+            t = (number_real_1, number_real_2, main_operation)
             return number_real_1, number_real_2, main_operation
     else:
+        numb_type = 2
         number_complex_1, number_complex_2 = validation_complex_input(main_operation)
         print(number_complex_1, number_complex_2)
+        t = (number_complex_1, number_complex_2, main_operation)
         return number_complex_1, number_complex_2, main_operation
 
 
