@@ -32,26 +32,27 @@ def start()-> tuple :
             result = operations(number1, number2, operation)
         case 2: 
             print('заданы комплексные числа')
-            compl1 = 'преобразование 1го числа'
-            compl2 = 'преобразование 2го числа'
-            result = 'coming soon operation for complex'
+            compl1 = compl.to_complex(number1)
+            compl2 = compl.to_complex(number2)           
+            result = operations(compl1, compl2, operation)
         case _:
             print('числа не заданы, завершаем программу без вычислений')
+            result = 'отсутствует'
     print(interface_data) # для теста
     return number_type, interface_data, result
 
 
-# точно поддерживают вещественные, для комплексных еще надо подумать
-def operations(a:float, b:float, o:int)-> str :   
+# работает с комплексными, если не указывать явно тип данных
+def operations(a, b, o:int)-> str :   
     match o:
         case 1:
-            res = str('coming soon sum')
+            res = str(a+b) # для теста
         case 2:
-            res = str('coming soon sub')
+            res = str(a-b) # для теста
         case 3:
-            res = str('coming soon mult')
+            res = str(a*b) # для теста
         case 41:
-            res = str('coming soon div/')
+            res = str(a/b) # для теста
         case 42:
             res = str('coming soon div//')
         case 43:
