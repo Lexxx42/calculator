@@ -10,7 +10,7 @@ import model_sum
 import compl
 
 
-def session()-> tuple :
+def session() -> tuple:
     operation_result = start()
     session_id = uuid.uuid1()
     session_datetime = datetime.datetime.now()
@@ -19,7 +19,7 @@ def session()-> tuple :
     return session_id, session_datetime, operation_result
 
 
-def start()-> tuple :
+def start() -> tuple:
     user_interface.main_menu()
     number_type = user_interface.numb_type
     interface_data = user_interface.t
@@ -30,29 +30,29 @@ def start()-> tuple :
         case 1:
             print('заданы вещественные числа')
             result = operations(number1, number2, operation)
-        case 2: 
+        case 2:
             print('заданы комплексные числа')
             compl1 = compl.to_complex(number1)
-            compl2 = compl.to_complex(number2)           
+            compl2 = compl.to_complex(number2)
             result = operations(compl1, compl2, operation)
         case _:
             print('числа не заданы, завершаем программу без вычислений')
             result = 'отсутствует'
-    print(interface_data) # для теста
+    print(interface_data)  # для теста
     return number_type, interface_data, result
 
 
 # работает с комплексными, если не указывать явно тип данных
-def operations(a, b, o:int)-> str :   
+def operations(a, b, o: int) -> str:
     match o:
         case 1:
-            res = str(a+b) # для теста
+            res = str(a + b)  # для теста
         case 2:
-            res = str(a-b) # для теста
+            res = str(a - b)  # для теста
         case 3:
-            res = str(a*b) # для теста
+            res = str(a * b)  # для теста
         case 41:
-            res = str(a/b) # для теста
+            res = str(a / b)  # для теста
         case 42:
             res = str('coming soon div//')
         case 43:
@@ -62,9 +62,9 @@ def operations(a, b, o:int)-> str :
         case 6:
             res = str('coming soon pow = 0.5 as sqrt')
         case _:
-            res = 'error'   
-    return res    
+            res = 'error'
+    return res
 
-def finish(r:str)-> None:  
+
+def finish(r: str) -> None:
     user_interface.view_result(r)
-

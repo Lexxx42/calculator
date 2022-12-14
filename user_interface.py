@@ -3,8 +3,9 @@ import sys
 from excep import *
 
 # добавлены глобальные переменные для передачи значений
-t=(0,0,0)
+t = (0, 0, 0)
 numb_type = -1
+
 
 def main_menu() -> None:
     """ This function is for main menu of calculator. """
@@ -64,8 +65,8 @@ def input_data(number_type, main_operation) -> tuple[float, float, int] | tuple[
         if main_operation == 4:
             code_for_additional_operation = show_additional_operations(number_type)
             print(code_for_additional_operation)
-            t = (number_real_1, number_real_2, 40+code_for_additional_operation)
-            return number_real_1, number_real_2, 40+code_for_additional_operation
+            t = (number_real_1, number_real_2, 40 + code_for_additional_operation)
+            return number_real_1, number_real_2, 40 + code_for_additional_operation
         else:
             t = (number_real_1, number_real_2, main_operation)
             return number_real_1, number_real_2, main_operation
@@ -91,9 +92,10 @@ def show_additional_operations(mode) -> int:
     else:
         return add_operation_code
 
+
 # main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
 # все print()-ы со значениями сейчас для отладки.
 
 # отображение результата
-def view_result(result:str) -> None:
+def view_result(result: str) -> None:
     print(result)

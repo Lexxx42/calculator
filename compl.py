@@ -1,5 +1,4 @@
-
-def to_complex(number:dict)-> complex:
+def to_complex(number: dict) -> complex:
     for key, value in number.items():
         comple = complex(int(key), int(value))
     return comple
