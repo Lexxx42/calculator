@@ -6,3 +6,6 @@ def init(n_1,n_2):
     global y
     x=n_1
     y=n_2
+
+def pow_new():
+    return x**y  
