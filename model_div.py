@@ -7,4 +7,7 @@ def div_complex_number(delimoe: complex, delitel: complex):
     rez = delimoe / delitel
     return rez
 
+delimoe = complex(a, b) 
+delitel = complex(c, d) 
 
+rez = div_complex_number(delimoe,delitel)  
