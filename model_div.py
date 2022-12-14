@@ -11,3 +11,8 @@ delimoe = complex(a, b)
 delitel = complex(c, d) 
 
 rez = div_complex_number(delimoe,delitel)  
+
+
+
+
+
