@@ -40,6 +40,7 @@ def choose_calculation(mode) -> None:
 2 - sub
 3 - mult
 4 - div
+5 - pow
 0 - previous menu
 """)
         operation = validation_operation(mode)
@@ -81,5 +82,6 @@ def show_additional_operations(mode) -> int:
     else:
         return add_operation_code
 
-# print(main_menu())  # - раскомментить, чтобы глянуть, как оно тут работает
+
+print(main_menu())  # - раскомментить, чтобы глянуть, как оно тут работает
 # все print()-ы со значениями сейчас для отладки.
