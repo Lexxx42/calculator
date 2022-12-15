@@ -42,6 +42,8 @@ def validation_rational_input(main_operation) -> tuple[float, float]:
             print("Division by zero!")
             continue
         output_numbers.append(number)
+        if main_operation == 6:
+            output_numbers.append(0.5)
     return output_numbers[0], output_numbers[1]
 
 
