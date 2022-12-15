@@ -1,2 +1,2 @@
-def pow_new(x,y):
-    return x**y  
+def pow_new(x, y):
+    return x ** y
