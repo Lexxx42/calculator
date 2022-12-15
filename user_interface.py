@@ -44,6 +44,7 @@ def choose_calculation(mode) -> None:
 2 - sub
 3 - mult
 4 - div
+5 - pow
 0 - previous menu
 """)
         operation = validation_operation(mode)
