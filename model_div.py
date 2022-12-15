@@ -32,3 +32,6 @@ def div_rational_number(delimoe: float, delitel: float):
 
 
 rez = div_rational_number(delimoe, delitel)
+
+
+# missing options: //, % for real numbers
