@@ -51,18 +51,18 @@ def operations(a, b, o: int) -> str:
         case 2:
             res = str(a - b)  # для теста
         case 3:
-            res = str(model_mult.mult(a,b))  # для теста
+            res = str(model_mult.mult(a, b))  # для теста
         case 4 | 41:
-            model_div.init(a,b)
+            model_div.init(a, b)
             res = str(model_div.div_universal_number())
         case 42:
-            model_div.init(a,b)
-            res = str(model_div.div_integer()) 
+            model_div.init(a, b)
+            res = str(model_div.div_integer())
         case 43:
-            model_div.init(a,b)
-            res = str(model_div.div_modul())  
+            model_div.init(a, b)
+            res = str(model_div.div_modul())
         case 5 | 6:
-            res = str(model_pow.pow_new(a,b))
+            res = str(model_pow.pow_new(a, b))
         case _:
             res = 'error'
     return res

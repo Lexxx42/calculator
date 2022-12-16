@@ -56,7 +56,8 @@ def validation_complex_input(main_operation) -> tuple[dict[float, float], dict[f
             if len(output_complex) % 2 == 0:
                 number = float(input(f"Enter {number_input} real part: "))
             else:
-                number = float(input(f"Enter {number_input} imaginary number: "))
+                number = float(
+                    input(f"Enter {number_input} imaginary number: "))
                 number_input += 1
         except ValueError:
             print('Incorrect input! Input must be a real number')
@@ -92,7 +93,8 @@ def validation_additional_operation() -> int:
     """ Function for check user's input for additional operation. """
     while True:
         try:
-            add_operation_code = int(input("Enter additional operation code: "))
+            add_operation_code = int(
+                input("Enter additional operation code: "))
         except ValueError:
             print('Incorrect input! Input must be an integer')
             continue

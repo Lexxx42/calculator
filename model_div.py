@@ -24,11 +24,11 @@
 
 
 # def div_rational_number(delimoe: float, delitel: float):
-    # if delitel == 0:
-    #    print("Ошибка, на ноль делить нельзя")
-    #    return 0
+# if delitel == 0:
+#    print("Ошибка, на ноль делить нельзя")
+#    return 0
 
-    # else:
+# else:
 #     return delimoe / delitel
 
 
@@ -36,21 +36,23 @@
 
 # missing options: //, % for real numbers
 
-def init(a,b) -> bool:
+def init(a, b) -> bool:
     global delimoe
     global delitel
     delimoe = a
     delitel = b
-    
+
 
 def div_universal_number():
     rez = delimoe/delitel
     return rez
 
+
 def div_integer():
     rez = delimoe//delitel
     return rez
 
+
 def div_modul():
-    rez = delimoe%delitel
+    rez = delimoe % delitel
     return rez

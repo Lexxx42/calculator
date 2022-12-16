@@ -16,7 +16,7 @@
 2. Склонировать репозиторий на свой комп в любую папку: git clone https..
 3. Создать ветку с именем своего модуля: git checkout -b branch_name, где branch_name - имя ветки
 4. Написать код. Исключительно в вашей ветке! Не забывайте сохранять измемения и коммититься
-5.Optional - ознакомиться с аннотацией функций и оформить функции согласно ней: https://semakin.dev/2020/06/type_hints/
+5. Optional - ознакомиться с аннотацией функций и оформить функции согласно ней: https://semakin.dev/2020/06/type_hints/
 6. Optional - скачать pylint (pip install pylint) и оформить докстринги согласно нотации: https://pylint.pycqa.org/en/latest/user_guide/messages/convention/missing-function-docstring.html
 7. Проверить работоспособность своего кода
 8. Запушить изменения в свой репозиторий: git push
