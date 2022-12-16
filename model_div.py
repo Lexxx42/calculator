@@ -36,23 +36,17 @@
 
 # missing options: //, % for real numbers
 
-def init(a, b) -> bool:
-    global delimoe
-    global delitel
-    delimoe = a
-    delitel = b
 
-
-def div_universal_number():
+def div_universal_number(delimoe, delitel):
     rez = delimoe / delitel
     return rez
 
 
-def div_integer():
+def div_integer(delimoe, delitel):
     rez = delimoe // delitel
     return rez
 
 
-def div_modul():
+def div_modul(delimoe, delitel):
     rez = delimoe % delitel
     return rez

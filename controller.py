@@ -53,14 +53,11 @@ def operations(a, b, o: int) -> str:
         case 3:
             res = str(model_mult.mult(a, b))  # для теста
         case 4 | 41:
-            model_div.init(a, b)
-            res = str(model_div.div_universal_number())
+            res = str(model_div.div_universal_number(a, b))
         case 42:
-            model_div.init(a, b)
-            res = str(model_div.div_integer())
+            res = str(model_div.div_integer(a, b))
         case 43:
-            model_div.init(a, b)
-            res = str(model_div.div_modul())
+            res = str(model_div.div_modul(a, b))
         case 5 | 6:
             res = str(model_pow.pow_new(a, b))
         case _:
