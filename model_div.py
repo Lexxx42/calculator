@@ -24,16 +24,13 @@ def div_complex_number(delimoe: complex, delitel: complex):
 
 
 def div_rational_number(delimoe: float, delitel: float):
-# if delitel == 0:
-#    print("Ошибка, на ноль делить нельзя") для теста
-#    return 0
+    # if delitel == 0:
+    #    print("Ошибка, на ноль делить нельзя") для теста
+    #    return 0
 
-# else:
+    # else:
     return delimoe / delitel
-
 
 # rez = div_rational_number(delimoe, delitel) для теста
 
 # missing options: //, % for real numbers
-
-

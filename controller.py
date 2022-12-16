@@ -48,9 +48,9 @@ def start() -> tuple:
 def operations(a, b, o: int) -> str:
     match o:
         case 1:
-            res = str(model_sum.sum_value(a,b))
+            res = str(model_sum.sum_value(a, b))
         case 2:
-            res = str(model_sub.sub(a,b))
+            res = str(model_sub.sub(a, b))
         case 3:
             res = str(model_mult.mult(a, b))
         case 4:
@@ -58,9 +58,9 @@ def operations(a, b, o: int) -> str:
         case 41:
             res = str(model_div.div_rational_number(a, b))
         case 42:
-            res = str(model_div_options.div_integer(a,b))
+            res = str(model_div_options.div_integer(a, b))
         case 43:
-            res = str(model_div_options.div_modul(a,b))
+            res = str(model_div_options.div_modul(a, b))
         case 5 | 6:
             res = str(model_pow.pow_new(a, b))
         case _:
