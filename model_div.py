@@ -44,12 +44,12 @@ def init(a, b) -> bool:
 
 
 def div_universal_number():
-    rez = delimoe/delitel
+    rez = delimoe / delitel
     return rez
 
 
 def div_integer():
-    rez = delimoe//delitel
+    rez = delimoe // delitel
     return rez
 
 

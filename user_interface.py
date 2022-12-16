@@ -55,7 +55,7 @@ def choose_calculation(mode) -> None:
 
 
 def input_data(number_type, main_operation) -> tuple[float, float, int] | tuple[float, float, int] | tuple[
-        dict[float, float], dict[float, float], int]:
+    dict[float, float], dict[float, float], int]:
     """ This function is for numbers input from user for main operations. """
     global t
     global numb_type
