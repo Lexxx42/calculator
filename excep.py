@@ -51,7 +51,7 @@ def validation_complex_input(main_operation) -> tuple[dict[float, float], dict[f
     """ Function for check user's input for complex numbers. """
     output_complex = []
     number_input = 1
-    while len(output_complex) < 4 and not main_operation == 5 or len(output_complex) < 2 and main_operation == 5:
+    while len(output_complex) < 4 and main_operation != 5 or len(output_complex) < 2 and main_operation == 5:
         try:
             if len(output_complex) % 2 == 0:
                 number = float(input(f"Enter {number_input} real part: "))
@@ -68,19 +68,19 @@ def validation_complex_input(main_operation) -> tuple[dict[float, float], dict[f
         output_complex.append(number)
     power = -1
     if main_operation == 5:
-        while power <= 0:
+        while power < 0:
             try:
-                power = int(input("Enter natural power value: "))
+                power = float(input("Enter real power value: "))
             except ValueError:
-                print('Incorrect input! Input must be a natural number')
+                print('Incorrect input! Input must be a real number')
                 continue
-            if power <= 0:
-                print("Number must be greater than zero.")
+            if power < 0:
+                print("Number must be greater or equal than zero.")
                 continue
             first_imaginary_number = {}
             first_imaginary_number[output_complex[0]] = output_complex[1]
             second_imaginary_number = {}
-            second_imaginary_number[power] = power
+            second_imaginary_number[power] = 0
             return first_imaginary_number, second_imaginary_number
     first_imaginary_number = {}
     second_imaginary_number = {}
