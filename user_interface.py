@@ -54,8 +54,8 @@ def choose_calculation(mode) -> None:
         return input_data(mode, operation)
 
 
-def input_data(number_type, main_operation) -> tuple[float, float, int] | tuple[
-    dict[float, float], dict[float, float], int]:
+def input_data(number_type, main_operation) -> tuple[float, float, int] \
+                                               | tuple[dict[float, float], dict[float, float], int]:
     """ This function is for numbers input from user for main operations. """
     global t
     global numb_type
@@ -98,9 +98,6 @@ def show_additional_operations(mode) -> int:
         return add_operation_code
 
 
-# main_menu()  # - раскомментить, чтобы глянуть, как оно тут работает
-# все print()-ы со значениями сейчас для отладки.
-
 # отображение результата
 def view_result(result: str) -> None:
-    print(result)
+    print(f"Result of operation: {result}")

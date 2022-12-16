@@ -28,19 +28,23 @@ def start() -> tuple:
     number1 = interface_data[0]
     number2 = interface_data[1]
     operation = interface_data[2]
+    logging.info(f'num1 = {number1}, num2 = {number2}, operation_code = {operation}')
     match number_type:
         case 1:
-            print('заданы вещественные числа')
+            # print('заданы вещественные числа')
+            logging.info('Operation with real numbers.')
             result = operations(number1, number2, operation)
         case 2:
-            print('заданы комплексные числа')
+            # print('заданы комплексные числа')
+            logging.info('Operation with complex numbers.')
             compl1 = compl.to_complex(number1)
             compl2 = compl.to_complex(number2)
             result = operations(compl1, compl2, operation)
         case _:
             print('числа не заданы, завершаем программу без вычислений')
             result = 'отсутствует'
-    print(interface_data)  # для теста
+    # print(interface_data)  # для теста
+    logging.info(f'{result} result of operation')
     return number_type, interface_data, result
 
 
