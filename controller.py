@@ -11,11 +11,12 @@ import compl
 
 
 def session() -> tuple:
-    operation_result = start()
     session_id = uuid.uuid1()
     session_datetime = datetime.datetime.now()
+    # logging.info('Create session: ',session_id)
+    operation_result = start()
+    # logging.info('Session params: ',operation_result)
     finish(operation_result[2])
-    # тут должно быть какое-то логирование
     return session_id, session_datetime, operation_result
 
 
@@ -50,17 +51,18 @@ def operations(a, b, o: int) -> str:
         case 2:
             res = str(a - b)  # для теста
         case 3:
-            res = str(a * b)  # для теста
-        case 41:
-            res = str(a / b)  # для теста
+            res = str(model_mult.mult(a,b))  # для теста
+        case 4 | 41:
+            model_div.init(a,b)
+            res = str(model_div.div_universal_number())
         case 42:
-            res = str('coming soon div//')
+            model_div.init(a,b)
+            res = str(model_div.div_integer()) 
         case 43:
-            res = str('coming soon div %')
-        case 5:
-            res = str('coming soon pow')
-        case 6:
-            res = str('coming soon pow = 0.5 as sqrt')
+            model_div.init(a,b)
+            res = str(model_div.div_modul())  
+        case 5 | 6:
+            res = str(model_pow.pow_new(a,b))
         case _:
             res = 'error'
     return res
