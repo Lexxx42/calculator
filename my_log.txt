@@ -1,0 +1,18 @@
+17-12-2022 14:20:07 - main - INFO - main - Start program.
+17-12-2022 14:20:08 - excep - INFO - validation_mode - main mode of calculator = 1
+17-12-2022 14:20:11 - excep - INFO - validation_operation - operation code = 1
+17-12-2022 14:20:13 - excep - INFO - validation_rational_input - num1 = 2.0, num2 = 2.0
+17-12-2022 14:20:13 - controller - INFO - start - num1 = 2.0, num2 = 2.0, operation_code = 1
+17-12-2022 14:20:13 - controller - INFO - start - Operation with real numbers.
+17-12-2022 14:20:13 - controller - INFO - start - 4.0 result of operation
+17-12-2022 14:20:13 - user_interface - INFO - view_result - 4.0 result received
+17-12-2022 14:20:13 - main - INFO - main - Start program.
+17-12-2022 14:20:15 - excep - INFO - validation_mode - main mode of calculator = 2
+17-12-2022 14:20:16 - excep - INFO - validation_operation - operation code = 3
+17-12-2022 14:20:19 - excep - INFO - validation_complex_input - num_complex1 = {2.0: 2.0}, num_complex2 = {1.0: 2.0}
+17-12-2022 14:20:19 - controller - INFO - start - num1 = {2.0: 2.0}, num2 = {1.0: 2.0}, operation_code = 3
+17-12-2022 14:20:19 - controller - INFO - start - Operation with complex numbers.
+17-12-2022 14:20:19 - controller - INFO - start - (-2+6j) result of operation
+17-12-2022 14:20:19 - user_interface - INFO - view_result - (-2+6j) result received
+17-12-2022 14:20:19 - main - INFO - main - Start program.
+17-12-2022 14:20:21 - excep - INFO - validation_mode - Finished work from main menu
