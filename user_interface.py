@@ -1,6 +1,7 @@
 """ This file is for user interface. Developed by Alexander Konukhov. """
 import sys
 from excep import *
+from main import main
 
 # добавлены глобальные переменные для передачи значений
 t = (0, 0, 0)
@@ -106,4 +107,6 @@ def show_additional_operations(mode) -> int:
 
 # отображение результата
 def view_result(result: str) -> None:
-    print(f"Result of operation: {result}")
+    logging.info(f'{result} result received')
+    print(f"Result of operation: {result}\n")
+    main()

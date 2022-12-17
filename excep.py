@@ -1,8 +1,10 @@
 """ This file is for data validation. Developed by Alexander Konukhov. """
 import logging
+
 MUST_BE_INTEGER = 'Incorrect input! Input must be an integer'
 MUST_BE_A_REAL = 'Incorrect input! Input must be a real number'
 DIVISION_BY_ZERO = "Division by zero!"
+
 
 def validation_mode() -> int:
     """ Function for check user's input for calculator's mode. """
@@ -14,7 +16,10 @@ def validation_mode() -> int:
             logging.exception(MUST_BE_INTEGER)
             continue
         if calc_mode in [0, 1, 2]:
-            logging.info(f'main mode of calculator = {calc_mode}')
+            if calc_mode == 0:
+                logging.info('Finished work from main menu')
+            else:
+                logging.info(f'main mode of calculator = {calc_mode}')
             return calc_mode
         print("Incorrect input! Please look at the available modes.")
         logging.exception("Incorrect input! Please look at the available modes.")
