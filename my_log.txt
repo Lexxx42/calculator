@@ -16,3 +16,88 @@
 17-12-2022 14:20:19 - user_interface - INFO - view_result - (-2+6j) result received
 17-12-2022 14:20:19 - main - INFO - main - Start program.
 17-12-2022 14:20:21 - excep - INFO - validation_mode - Finished work from main menu
+18-12-2022 10:05:28 - main - INFO - main - Start program.
+18-12-2022 10:05:43 - excep - INFO - validation_mode - main mode of calculator = 1
+18-12-2022 10:06:01 - excep - INFO - validation_operation - operation code = 0
+18-12-2022 10:06:05 - excep - INFO - validation_mode - main mode of calculator = 2
+18-12-2022 10:06:13 - excep - INFO - validation_operation - operation code = 5
+18-12-2022 10:06:19 - controller - INFO - start - num1 = {12.0: 2.0}, num2 = {0.5: 0}, operation_code = 5
+18-12-2022 10:06:19 - controller - INFO - start - Operation with complex numbers.
+18-12-2022 10:06:19 - controller - INFO - start - (3.476026831067076+0.28768477592361347j) result of operation
+18-12-2022 10:06:19 - user_interface - INFO - view_result - (3.476026831067076+0.28768477592361347j) result received
+18-12-2022 10:06:19 - main - INFO - main - Start program.
+18-12-2022 10:06:33 - excep - INFO - validation_mode - main mode of calculator = 2
+18-12-2022 10:06:34 - excep - INFO - validation_operation - operation code = 4
+18-12-2022 10:06:40 - excep - ERROR - validation_complex_input - Division by zero!
+NoneType: None
+18-12-2022 10:07:00 - excep - ERROR - validation_complex_input - Incorrect input! Input must be a real number
+Traceback (most recent call last):
+  File "G:\calc\calculator\excep.py", line 77, in validation_complex_input
+    number = float(
+             ^^^^^^
+ValueError: could not convert string to float: 'asd'
+18-12-2022 10:07:02 - excep - ERROR - validation_complex_input - Incorrect input! Input must be a real number
+Traceback (most recent call last):
+  File "G:\calc\calculator\excep.py", line 77, in validation_complex_input
+    number = float(
+             ^^^^^^
+ValueError: could not convert string to float: 'd'
+18-12-2022 10:07:04 - excep - ERROR - validation_complex_input - Division by zero!
+NoneType: None
+18-12-2022 10:07:06 - excep - INFO - validation_complex_input - num_complex1 = {1.0: 2.0}, num_complex2 = {0.0: 1.0}
+18-12-2022 10:07:06 - controller - INFO - start - num1 = {1.0: 2.0}, num2 = {0.0: 1.0}, operation_code = 4
+18-12-2022 10:07:06 - controller - INFO - start - Operation with complex numbers.
+18-12-2022 10:07:06 - controller - INFO - start - (2-1j) result of operation
+18-12-2022 10:07:06 - user_interface - INFO - view_result - (2-1j) result received
+18-12-2022 10:07:06 - main - INFO - main - Start program.
+18-12-2022 10:08:06 - excep - INFO - validation_mode - Finished work from main menu
+18-12-2022 10:08:43 - main - INFO - main - Start program.
+18-12-2022 10:08:48 - excep - ERROR - validation_mode - Incorrect input! Input must be an integer
+Traceback (most recent call last):
+  File "G:\calc\calculator\excep.py", line 13, in validation_mode
+    calc_mode = int(input("Enter the calculator's mode: "))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'asd'
+18-12-2022 10:08:55 - excep - ERROR - validation_mode - Incorrect input! Please look at the available modes.
+NoneType: None
+18-12-2022 10:08:57 - excep - ERROR - validation_mode - Incorrect input! Please look at the available modes.
+NoneType: None
+18-12-2022 10:09:03 - excep - ERROR - validation_mode - Incorrect input! Input must be an integer
+Traceback (most recent call last):
+  File "G:\calc\calculator\excep.py", line 13, in validation_mode
+    calc_mode = int(input("Enter the calculator's mode: "))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '1.12'
+18-12-2022 10:09:07 - excep - INFO - validation_mode - main mode of calculator = 1
+18-12-2022 10:09:10 - excep - ERROR - validation_operation - Incorrect input! Please look at the available operation codes.
+NoneType: None
+18-12-2022 10:09:11 - excep - ERROR - validation_operation - Incorrect input! Input must be an integer
+Traceback (most recent call last):
+  File "G:\calc\calculator\excep.py", line 32, in validation_operation
+    operation_type = int(input("Enter operation code: "))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'asd'
+18-12-2022 10:09:13 - excep - ERROR - validation_operation - Incorrect input! Input must be an integer
+Traceback (most recent call last):
+  File "G:\calc\calculator\excep.py", line 32, in validation_operation
+    operation_type = int(input("Enter operation code: "))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '1.123'
+18-12-2022 10:09:16 - excep - ERROR - validation_operation - Incorrect input! Please look at the available operation codes.
+NoneType: None
+18-12-2022 10:09:26 - excep - INFO - validation_operation - operation code = 1
+18-12-2022 10:09:38 - excep - INFO - validation_rational_input - num1 = 1.0, num2 = 2.2
+18-12-2022 10:09:38 - controller - INFO - start - num1 = 1.0, num2 = 2.2, operation_code = 1
+18-12-2022 10:09:38 - controller - INFO - start - Operation with real numbers.
+18-12-2022 10:09:38 - controller - INFO - start - 3.2 result of operation
+18-12-2022 10:09:38 - user_interface - INFO - view_result - 3.2 result received
+18-12-2022 10:09:38 - main - INFO - main - Start program.
+18-12-2022 10:09:46 - excep - INFO - validation_mode - main mode of calculator = 1
+18-12-2022 10:09:48 - excep - INFO - validation_operation - operation code = 1
+18-12-2022 10:09:49 - excep - INFO - validation_rational_input - num1 = 2.0, num2 = 2.0
+18-12-2022 10:09:49 - controller - INFO - start - num1 = 2.0, num2 = 2.0, operation_code = 1
+18-12-2022 10:09:49 - controller - INFO - start - Operation with real numbers.
+18-12-2022 10:09:49 - controller - INFO - start - 4.0 result of operation
+18-12-2022 10:09:49 - user_interface - INFO - view_result - 4.0 result received
+18-12-2022 10:09:49 - main - INFO - main - Start program.
+18-12-2022 10:11:23 - excep - INFO - validation_mode - Finished work from main menu

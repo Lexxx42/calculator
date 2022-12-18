@@ -82,6 +82,7 @@ def validation_complex_input(main_operation) -> tuple[dict[float, float], dict[f
             logging.exception(MUST_BE_A_REAL)
             continue
         if main_operation == 4 and len(output_complex) == 3 and output_complex[2] == 0 and number == 0:
+            number_input -= 1
             print(DIVISION_BY_ZERO)
             logging.exception(DIVISION_BY_ZERO)
             continue
